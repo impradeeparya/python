@@ -18,4 +18,10 @@ class Deck:
         shuffle(self.deck)
 
     def __str__(self):
-        return ",".join(map(str, self.deck))
+        deck = ''
+        for card in self.deck:
+            deck += ',' + card.__str__()
+        return deck
+
+    def deal(self):
+        return self.deck.pop()

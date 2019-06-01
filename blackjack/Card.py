@@ -5,4 +5,4 @@ class Card:
         self.rank = rank
 
     def __str__(self):
-        return ' { suit : ' + self.suit + ' rank : ' + self.rank + ' } '
+        return ' { ' + self.rank + ' of ' + self.suit + ' } '
